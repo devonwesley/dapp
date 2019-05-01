@@ -2,7 +2,7 @@ require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 const ServiceRunner = require('jade-service-runner-package');
-const client = new ServiceRunner({transport: { type: 'http', port: 8002}});
+const client = new ServiceRunner({transport: { type: 'browser', port: 8002}});
 client.installService('mgeth', '1').then((x) => console.log(x));
 
 const submitAccount = document.getElementById('submitAccount');
