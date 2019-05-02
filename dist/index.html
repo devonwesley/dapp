@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <title></title>
+  <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./index.css"></style>
+</head>
+<body>
+  <div class="mui-appbar"></div>
+  <div class="mui-container">
+    <div class="mui-panel">
+      <h3>Account balance checker: </h3>
+      <div class="mui-textfield">
+        <input 
+          type="text" 
+          placeholder="Account address, example: 0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413"
+          id="accountAddress"
+        >
+      </div>
+      <button class="mui-btn mui-btn--raised" id="submitAccount">Get Balance</button>
+    </div>
+    <div class="mui-panel" id="displayBalance"></div>
+  </div>
+
+  <script src="./bundle.js"></script>
+</body>
+</html>
