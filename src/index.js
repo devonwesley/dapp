@@ -6,9 +6,9 @@ import MGethService from 'mgeth-service';
 let mgeth;
 async function init() {
   const client = new ServiceRunner({transport: { type: 'browser', port: 8002}});
+  await client.installService('mgeth', '1').then((x) => console.log(x));
   const mgethConfig = await client.startService('mgeth', 'mainnet');
   mgeth = new MGethService({transport: { type: 'browser', ...mgethConfig}});
-  client.installService('mgeth', '1').then((x) => console.log(x));
 }
 
 init();
