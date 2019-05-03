@@ -33,6 +33,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jade-service-runner-package": "github:zcstarr/jade-service-runner-package#browser",
     "jayson": "github:zcstarr/jayson",
+    "mgeth-service": "github:zcstarr/mgeth-service",
     "module": "^1.2.5",
     "prettier": "^1.17.0",
     "webpack": "^4.30.0"
