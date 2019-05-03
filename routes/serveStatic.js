@@ -1,7 +1,7 @@
 const fs = require('fs');  
 const path = require('path');  
 
-const staticBasePath = './statics';
+const staticBasePath = './dist';
 
 const serveStatic = function(request, response) {  
   const resolvedBase = path.resolve(staticBasePath);
